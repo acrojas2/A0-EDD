@@ -60,6 +60,15 @@ int pop(Stack *stack)
 void destroy(Stack *stack)
 {
   /* Aqui agrega tu código */
+  int cond;
+  cond = 1;
+  while (cond) {
+    int color_node;
+    color_node = pop(stack);
+    if (color_node == -1){
+      cond = 0;
+    }
+  }
   free(stack);
 }
 
