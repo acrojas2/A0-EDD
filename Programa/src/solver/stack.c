@@ -45,6 +45,7 @@ int pop(Stack *stack)
     //printf("Yo tengo este color %d y el que está debajo mio es %d \n",k,(stack -> first_node) -> down_node ->color );
     if ((stack -> first_node) -> down_node == NULL){
       // printf("soy el ultimo nodo del stack %d\n", k);
+      free(stack -> first_node);
       stack -> first_node = NULL;
     //  printf("STACK me vacié ahora apunto a : %s\n", (stack -> first_node));
     }
